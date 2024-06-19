@@ -1,33 +1,116 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body{
+    background-color: black;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.body{
+    background-color: black;
+    color: white;
+    height: 100vh;
 }
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.body2{
+    background-color: black;
+    color: white;
+    height: 70vh;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.MAVE{
+    font-size: 55px;
+    font-weight: bold;
+}
+.left{
+    margin-top: 70px;
+    width: 50vw;
+    height: 100%;
+    display: flex;
+    
+    justify-content: center;
+}
+.left2{
+    width: 65vw;
+    height: 60%;
+}
+.DES{
+    font-size: 35px;
+    
+}
+.jnbtn{
+    background-color: rgb(68, 68, 245);
+    color: white;
+    border: none;
+    padding: 15px;
+    width: 400px;
+    border-radius: 30px;
+    margin-top: 10px;
+    color: black;
+}
+.jnbtn:hover{
+    color: white;
+}
+.circle {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgb(68, 68, 245);
+    position: absolute;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+.circle:nth-child(1) {
+    left: 0;
+    
+    
+}
+.circle:nth-child(2) {
+    left: 15px;
+}
+.circle:nth-child(3) {
+    left: 33px;
+}
+.circle:nth-child(4) {
+    left: 52px;
+}
+.spantag{
+    padding-top: 10px;
+    padding-left: 10px;
+    
+    display: flex;
+}
+.spantag span{
+    font-weight: bold;
+}
+.name{
+    color: rgb(68, 68, 245);
+    font-size: 45px;
+    font-weight: bold;
+}
+.icon a {
+    background-color: rgb(189, 189, 240);
+    border-radius: 50%;
+    padding: 10px;
+}
+.icon a:hover{
+    background-color: gray;
+}
+.count{
+    height: 40vh;
+    background-color: black;
+    color: white;
+    
+}
+.countdown{
+    background-color:  	rgb(34, 34, 34);
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 25vh;
+    text-align: center;
+    width: 30%;
+}
+.box h1{
+    color: rgb(41, 41, 247);
+    margin-top: 30px;
+    font-weight: bold;
+    transition: all 0.7s linear;
 }
